@@ -180,7 +180,7 @@ async function run(): Promise<void> {
 				block: async () => {
 					core.exportVariable("JEKYLL_ENV", "${INPUT_JEKYLL_ENV}");
 					return await exec.exec(
-						`JEKYLL_ENV=${INPUT_JEKYLL_ENV} bundle exec jekyll build -s ${jekyllSrc} ${INPUT_CUSTOM_OPTS}`
+						`JEKYLL_ENV=${INPUT_JEKYLL_ENV} bundle exec jekyll serve -s ${jekyllSrc} ${INPUT_CUSTOM_OPTS}`
 					);
 				},
 			});
