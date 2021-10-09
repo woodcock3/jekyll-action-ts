@@ -10,6 +10,9 @@ inputs:
   custom_opts:  
     description: 'Custom Jekyll build options https://jekyllrb.com/docs/configuration/options/'
     required: false
+  jekyll_env:  
+    description: 'Set the Jekyll environment'
+    required: false
   enable_cache:  
     description: 'Enable caching within the action'
     required: false
